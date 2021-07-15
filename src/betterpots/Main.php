@@ -25,7 +25,7 @@ class Main extends PluginBase implements Listener {
             return;
         }
         $distance = $pot->distance($player); 
-        if($distance <= 3.3) {
+        if($distance <= 3.4) {
             if($pot instanceof SplashPotion && $player->isAlive()) {
                 $player->setHealth($player->getHealth() + 4.9);
             }
