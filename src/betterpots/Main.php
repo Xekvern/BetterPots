@@ -4,17 +4,15 @@ namespace betterpots;
 
 use pocketmine\plugin\PluginBase;
 
-use pocketmine\Player;
+use pocketmine\player\Player;
 use pocketmine\Server;
-use pocketmine\level\{Position, Level};
-use pocketmine\math\Vector3;
 use pocketmine\entity\projectile\SplashPotion;
 use pocketmine\event\Listener;
 use pocketmine\event\entity\ProjectileHitBlockEvent;
 
 class Main extends PluginBase implements Listener {
 	
-    public function onEnable() {
+    public function onEnable(): void {
      $this->getServer()->getPluginManager()->registerEvents($this, $this);
     }
   
